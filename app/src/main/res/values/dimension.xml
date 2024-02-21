@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="width_32">32dp</dimen>
+    <dimen name="height_32">32dp</dimen>
+
+    <dimen name="padding_8">8dp</dimen>
+    <dimen name="padding_16">16dp</dimen>
+
+    <dimen name="elevation_8">8dp</dimen>
+</resources>

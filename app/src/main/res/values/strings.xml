@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Art Space App</string>
+    <string name="btn_previous">Previous</string>
+    <string name="btn_next">Next</string>
+    <string name="first_painting_title">1. Outer space</string>
+    <string name="first_painting_desc">Space Shuttle Outer space Art CANVAS print Starry Night Ready to Hang wall decor artwork by Aja Earth science space art Beyond the Horizon.</string>
+    <string name="second_painting_title">2. Catholic painting</string>
+    <string name="second_painting_desc">The Catholic artist and the challenge of evangelizing modern culture.</string>
+    <string name="third_painting_title">3. Future</string>
+    <string name="third_painting_desc">A visualization depicting what would happen if the Earth were to encounter a black hole.</string>
+</resources>
