@@ -59,29 +59,29 @@ fun ArtSpacePreview() {
 
 @Composable
 fun ArtSpace() {
-    val minValue = 1
-    val maxValue = 3
+    val minPosition = 1
+    val maxPosition = 3
     var index by remember { mutableStateOf(1) }
     Column(
         modifier = Modifier.fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         when (index) {
-            1 -> ArtDisplay(
+            1 -> DisplayArt(
                 painter = painterResource(id = R.drawable.first_painting),
                 title = stringResource(R.string.first_painting_title),
                 description = stringResource(R.string.first_painting_desc),
                 modifier = Modifier.weight(1F)
             )
 
-            2 -> ArtDisplay(
+            2 -> DisplayArt(
                 painter = painterResource(id = R.drawable.second_painting),
                 title = stringResource(R.string.second_painting_title),
                 description = stringResource(R.string.first_painting_desc),
                 modifier = Modifier.weight(1F)
             )
 
-            3 -> ArtDisplay(
+            3 -> DisplayArt(
                 painter = painterResource(id = R.drawable.third_painting),
                 title = stringResource(R.string.third_painting_title),
                 description = stringResource(R.string.third_painting_desc),
@@ -90,16 +90,16 @@ fun ArtSpace() {
         }
         DisplayController(
             previous = {
-                if (index > minValue) index-- },
+                if (index > minPosition) index-- },
             next = {
-                if (index < maxValue) index++
-                else if (index == maxValue) index = 1 }
+                if (index < maxPosition) index++
+                else if (index == maxPosition) index = 1 }
         )
     }
 }
 
 @Composable
-fun ArtDisplay(
+fun DisplayArt(
     modifier: Modifier = Modifier,
     painter: Painter,
     title: String,
