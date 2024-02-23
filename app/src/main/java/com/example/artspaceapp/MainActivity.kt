@@ -90,7 +90,8 @@ fun ArtSpace() {
         }
         DisplayController(
             previous = {
-                if (index > minPosition) index-- },
+                if (index > minPosition) index--
+                else if (index == minPosition) index = 3 },
             next = {
                 if (index < maxPosition) index++
                 else if (index == maxPosition) index = 1 }
